@@ -44,7 +44,7 @@
        } 
        if(num=/整数\s+\s气温\s+\s等于\s+\D+\s气温\s+\s减少\s+\D+\s气温\s+\s增加\s+\D+\s看看\s+\s气温\s+\s如果\s+\s气温\s+\s大于\s+\s八\s+\s则\s+\s看看\s+\s“你好，世界”\s+\s否则\s+\s看看\s+\s“冻死我了”\s/g ){
                 a1=parseInt(str[9])-parseInt(str[17])+parseInt(str[25])  //转int
-                a2=transfer(a1.toString()) ; //转为字符串类型
+                a2=trans(a1.toString()) ; //转为字符串类型
                 document.write(a2)           
                 if(a1>8){
                     document.write("</br>"+"你好,世界"+"</br>")
@@ -56,11 +56,11 @@
                 a3=parseInt(str[11])+parseInt(str[35]);
                     if(a3>8){
                         a4=parseInt(str[25])+1;
-                        a4=transfer(a4.toString()) ;
+                        a4=trans(a4.toString()) ;
                         document.write(a4);
                         }else{
                             a5=parseInt(str[25])+0;
-                            a5=transfer(a5.toString()) ;
+                            a5=trans(a5.toString()) ;
                             document.write(a5);
                             }
             }        
